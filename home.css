@@ -249,7 +249,6 @@
   background-color: var(--dl-color-gray-900);
 }
 .home-text4 {
-  color: var(--dl-color-gray-white);
   align-self: center;
 }
 .home-text6 {
@@ -327,7 +326,6 @@
     justify-content: space-between;
   }
   .home-text4 {
-    color: var(--dl-color-gray-white);
     text-align: center;
   }
 }
