@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    background-size: 200% 200%;
+    animation: movimentoGradiente 5s linear infinite alternate;
+}
+
+h1 {
+    font-size: calc(2.375rem + 1.5vw);
+}
+
+
+@keyframes movimentoGradiente {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    color: black;
+    font-family: 'Special Elite', cursive;
+    font-size: unset;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.onda {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: onda 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.onda:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: onda 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.onda:nth-of-type(3) {
+    bottom: -2.25em;
+    animation: onda 20s -1s reverse infinite;
+    opacity: 0.9;
+
+}
+
+@keyframes onda {
+    2% {
+        transform: translateX(1);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(1);
+    }
+}
