@@ -578,7 +578,7 @@ body.is-instant:after {
     border-radius: 0 !important;
     max-width: 100%;
     vertical-align: top;
-    width: inherit;
+    width: -webkit-fill-available;
 }
 
 .image.full .frame {
