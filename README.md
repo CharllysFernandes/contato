@@ -6,6 +6,7 @@ A página é composta por um cabeçalho, que contém uma imagem de Daiany e um t
 ## Tecnologias utilizadas
 - HTML
 - CSS
+- Javascript
 - Bootstrap Icons
 - Google Analytics
 
